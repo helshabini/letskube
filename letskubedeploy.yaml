@@ -14,10 +14,8 @@ spec:
     spec:
       containers:
       - name: letskube
-        image: haelshabacr.azurecr.io/letskube:latest
+        image: acrcapricorn.azurecr.io/letskube:latest
         imagePullPolicy: IfNotPresent
-      imagePullSecrets:
-      - name: haelshabacrsp
       restartPolicy: Always
   selector:
     matchLabels:
